@@ -32,7 +32,6 @@ main {
   max-width: 64rem;
   padding: 2rem;
 }
-
 section {
   background-color: grey;
   border-radius: 0.6rem;
@@ -162,6 +161,7 @@ p {
 }
 #audience-growth p {
   font-size: 1rem;
+  font-weight: 500;
 }
 #audience-growth img {
   margin-top: auto;
@@ -197,4 +197,107 @@ p {
   line-height: 2rem;
   font-weight: 500;
   font-size: 2rem;
+}
+
+@media screen and (max-width: 1026px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: auto;
+    grid-auto-rows: auto;
+    gap: 1.5rem;
+    max-width: 100%;
+    padding: 2rem;
+  }
+  section {
+    grid-column: auto;
+    grid-row: auto;
+  }
+  #social-media,
+  #manage-accounts,
+  #posting-schedule,
+  #social-media-scheduling,
+  #grow-followers,
+  #audience-growth,
+  #create-and-schedule-content,
+  #write-content-with-ai {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  #manage-accounts {
+    justify-content: start;
+    padding: 1.5rem;
+  }
+  #manage-accounts img {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  #posting-schedule {
+    justify-content: start;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 0rem;
+  }
+  #posting-schedule img {
+    padding-right: 5rem;
+  }
+  #social-media-scheduling {
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1.2rem;
+  }
+  #social-media-scheduling h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+  #social-media-scheduling img {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  #social-media-scheduling p {
+    line-height: 1.1rem;
+    font-weight: 400;
+  }
+  #grow-followers {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+  }
+  #grow-followers h2 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+  }
+  #grow-followers img {
+    width: 70%;
+    padding-right: 0rem;
+    margin-bottom: 2rem;
+  }
+  #audience-growth {
+    padding: 1.5rem;
+  }
+  #audience-growth h2 {
+    font-size: 3.1rem;
+    font-weight: 500;
+  }
+  #audience-growth p {
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+  }
+  #audience-growth img {
+    padding-right: 5rem;
+  }
+  #create-and-schedule-content img {
+    padding-right: 5rem;
+  }
+  #write-content-with-ai h2 {
+    margin-bottom: 1.5rem;
+  }
+  #write-content-with-ai img {
+    padding-right: 5rem;
+  }
 }
