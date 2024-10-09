@@ -204,7 +204,6 @@ p {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-template-rows: auto;
-    grid-auto-rows: auto;
     gap: 1.5rem;
     max-width: 100%;
     padding: 2rem;
@@ -212,6 +211,7 @@ p {
   section {
     grid-column: auto;
     grid-row: auto;
+    height: auto;
   }
   #social-media,
   #manage-accounts,
@@ -223,10 +223,11 @@ p {
   #write-content-with-ai {
     grid-column: auto;
     grid-row: auto;
+    height: auto;
   }
 
   #manage-accounts {
-    justify-content: start;
+    justify-content: center;
     padding: 1.5rem;
   }
   #manage-accounts img {
@@ -234,7 +235,7 @@ p {
     margin-bottom: 1rem;
   }
   #posting-schedule {
-    justify-content: start;
+    justify-content: center;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     padding-top: 1.5rem;
@@ -278,6 +279,7 @@ p {
     margin-bottom: 2rem;
   }
   #audience-growth {
+    justify-content: center;
     padding: 1.5rem;
   }
   #audience-growth h2 {
@@ -290,6 +292,7 @@ p {
   }
   #audience-growth img {
     padding-right: 5rem;
+    margin-top: 0rem;
   }
   #create-and-schedule-content img {
     padding-right: 5rem;
